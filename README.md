@@ -1,3 +1,3 @@
-# Labs 
+1-50 labs on subject Databases on the site https://sql-ex.ru/exercises/index.php?act=learn 
 
-Ветка object_oriented_programming - лабы по ООП
+database management system: ORACLE
