@@ -1,0 +1,115 @@
+\documentclass{article}
+\usepackage{russ}
+\usepackage{amsmath}
+\begin{document}
+$$
+\begin{pmatrix}
+a_{11}-\lambda & a_{12}&a_{13}\\
+a_{21}& a_{22}-\lambda &a_{23}\\
+a_{31}& a_{32}&a_{33}-\lambda
+\end{pmatrix}
+$$
+$$
+\setcounter{MaxMatrixCols}{20}
+\begin{matrix}
+&&&& 1 && 1\\
+&&& 1 && 2 && 1\\
+&& 1 && 3 && 3 && 1\\
+& 1 && 4 && 6 && 4 && 1\\
+1 && 5 && 10 && 10 && 5 && 1
+\end{matrix}
+$$
+$$
+\begin{vmatrix}
+0 & 0&\hdotsfor{2} &a_1\\
+1 & 0&\hdotsfor{2} &a_2\\
+\hdotsfor{5}\\
+\hdotsfor{2} &1 &0 &a_{n-1}\\
+0 & \hdotsfor{2} &1 &a_n
+\end{vmatrix}
+$$
+$$
+\begin{pmatrix}
+a_{11}& a_{12} &\ldots & a_{1n}\\
+a_{21}& a_{22} &\ldots & a_{2n}\\
+\vdots& \vdots &\ddots & \vdots\\
+a_{n1}& a_{n2} &\ldots & a_{nn}
+\end{pmatrix}
+$$
+$
+[X,Y]=\bigl(
+\begin{smallmatrix}
+1 & 0\\0 & -1
+\end{smallmatrix}
+\bigr)
+$
+$$
+\left(
+\begin{array}{ccc}
+a_{11}-\lambda & a_{12}&a_{13}\\
+a_{21}& a_{22}-\lambda &a_{23}\\
+a_{31}& a_{32}&a_{33}-\lambda
+\end{array}
+\right)
+$$
+$$
+\begin{pmatrix}
+||\textbf{A}_{11}^{(-1)}|| & ||\textbf{A}_{12}^{(-1)}||\\||\textbf{A}_{21}^{(-1)}||&
+||\textbf{A}_{22}^{(-1)}||
+\end{pmatrix}
+\leq \frac {
+\begin{pmatrix}||\textbf{A}_{22}^{-1}||^{-1} & ||\textbf{A}_{12}||\\||\textbf{A}_{21}^{-
+1}||& ||\textbf{A}_{11}^{-1}||^{-1}
+\end{pmatrix}}
+{||\textbf{A}_{11}^{-1}||^{-1}||\textbf{A}_{22}^{-
+1}||^{-1} - ||\textbf{A}_{12}||||\textbf{A}_{21}||}.
+$$
+
+\begin{gather}
+(-1)^p \det \textbf{C}
+\begin{pmatrix} i_1 & i_2 & \ldots & i_p \\i_1 & i_2 & \ldots & i_p
+\end{pmatrix} > 0,
+\begin{aligned}
+ &1 \leq i_1 < i_2 < \dots < i_p \leq n;\\
+ &p = 1, 2, \dots, n,
+ \end{aligned}\\
+\textbf{W} = \textbf{W}(\textbf{a}_1,\ldots,\textbf{a}_n) =
+\begin{pmatrix} 1 & 1 & \ldots & 1 \\
+\textbf{a}_1 & \textbf{a}_2 & \ldots & \textbf{a}_n \\ \textbf{a}_1^2 & \textbf{a}_2^2 & \ldots &
+\textbf{a}_n^2 \\ \ldots & \ldots & \ldots & \ldots \\ \textbf{a}_1^{n-1} & \textbf{a}_2^{n-1} & \ldots &
+\textbf{a}_n^{n-1}
+\end{pmatrix},\\
+\textbf{W}^{-1}(\textbf{a},\textbf{b},\textbf{c}) =
+\begin{pmatrix} [\textbf{a},\textbf{b},\textbf{c}]^{-1} &
+0 & 0 \\ 0 & [\textbf{b},\textbf{c},\textbf{a}]^{-1} & 0 \\ 0 & 0 & [\textbf{c},\textbf{a},\textbf{b}]^{-1}
+\end{pmatrix}
+ \times \nonumber\\ \times
+\begin{pmatrix}
+- \textbf{b}^2+(\textbf{c}^2 - \textbf{a}^2)(\textbf{c} - \textbf{a})^{-1}\textbf{b} & -
+(\textbf{b}^2-\textbf{c}^2)(\textbf{b} - \textbf{c})^{-1} & 1 \\ - \textbf{c}^2+(\textbf{a}^2 -
+\textbf{b}^2)(\textbf{a} - \textbf{b})^{-1}\textbf{c} & - (\textbf{c}^2-\textbf{a}^2)(\textbf{c} - \textbf{a})^{ -
+1} & 1 \\ - \textbf{a}^2 + (\textbf{b}^2 - \textbf{c}^2)(\textbf{b} - \textbf{c})^{-1}\textbf{a} & - (\textbf{a}^2-
+\textbf{b}^2)(\textbf{a} - \textbf{b})^{-1} & 1
+\end{pmatrix}
+.\nonumber
+\end{gather}
+$$
+\textbf{x},\textbf{h}]_i = \lim_{0<t\to 0}
+\begin{cases}
+\text{Re} \frac {x_i \overline{h}_i} {|x_i|},&\text{если $x_i\neq 0$;} \\
+|h_i|, &\text{если $x_i = 0$,}
+\end{cases}
+\eqno (3)
+$$
+$$
+[\textbf{e}_j,\textbf{Ae}_j] =
+\begin{pmatrix}
+|a_{1j}| \\ \ldots \\ \text{Re} \ a_{jj} \\ \ldots \\
+|a_{nj}|
+\end{pmatrix}
+\leq
+\begin{pmatrix}
+c_{1j} \\ \ldots \\ c_{jj} \\ \ldots \\ c_{nj}
+\end{pmatrix},
+$$
+\end{document} 

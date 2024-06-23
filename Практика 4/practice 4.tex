@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[cp1251]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts,amssymb,euscript}
+\pagestyle{plain}
+
+\begin{document}
+Задание 1.
+
+\begin{multline}1+2+3+4+\ldots\\+46+47+48+\ldots\\+99+100=5050\end{multline}
+
+\begin{gather}2\times 2=4\\9\times 9=81\end{gather}
+
+\begin{equation}\begin{split}1999&=1000+900+{}\\&+90+9\end{split}\end{equation}
+
+\begin{align}7\times 9& =63 & 63:9& =7\\9\times 10& =90 & 90:10& =9\end{align}
+
+\begin{align*}3\cdot 5+7\cdot 5&=(3+7)\cdot5 &&\text{(ясно)}\\&=50&&\text{(очевидно)}\end{align*}
+
+\begin{align*}3\cdot 5+7\cdot 5&=(3+7)\cdot5 &&\text{(ясно)}\\&=50&&\text{(очевидно),}\\\intertext{откуда}15+35 &=50\end{align*}
+
+$$\left\{\begin{aligned}x^2+y^2&=7\\x+y & = 3.\\\end{aligned}\right.$$
+$$|x|=\begin{cases}x,&\text{если $x>0$;}\\0,&\text{если $x=0$;}\\-x,&\text{если $x<0$.}\end{cases}$$
+$$\left\{\begin{array}{rcl}x^2+y^2&=&7\\x+y & = &3.\\\end{array}\right.$$
+
+\begin{eqnarray}2\times3&=&6\\2+3&=&5\label{silly}\end{eqnarray}На с. \pageref{silly}~приведено глупое уравнение~\ref{silly}.
+
+\begin{eqnarray}\int_{-\infty}^\infty e^{-x^2}dx & = &\sqrt{\pi}\nonumber\\\sqrt{576} & = & 24\end{eqnarray}
+
+Задание 2.
+
+$$a^{1-\sigma}b^\sigma\leq(1-\sigma)a+\sigma b \eqno(1.1)$$
+$$\Bigg|\sum\limits_{i=1}^n x_iy_i\Biggl|\leq\sum\limits_{i=1}^n|x_i||y_i|\leq \Biggl( \sum \limits_{i=1}^n |x_i|^{\frac 1{1-\sigma}}\Biggl)^{1-\sigma}\Biggl( \sum \limits_{i=1}^n |y_i|^{\frac1 {\sigma}} \Biggl)^\sigma. \eqno(1.3)$$
+$$||x||_\sigma=\begin{cases}\displaystyle\max_i|x_i|,&\text{если $\sigma = 0$;}\\\Biggl( \sum \limits_{i=1}^n |x_i|^{\frac1 {\sigma}} \Biggl)^\sigma,&\text{если $0<\sigma\leq 1$;}\end{cases}$$
+
+$$c_k = \sum_{\substack{1\lt i\lt 3 \\
+1\le j\lt 5}}a_{ij}$$
+
+\end{document} 

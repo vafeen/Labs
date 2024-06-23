@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{russ}
+\usepackage{amsmath}
+
+\begin{document}
+
+$$A\stackrel{f}{\longrightarrow}B$$
+
+$$A\xleftarrow[z]{f}B\xrightarrow{f+g-h}C$$
+
+$$\underbrace{1+3+5+7+\ldots+(2n-1)}_{\mbox{$n$ слагаемых}}=n^2$$
+
+$$\overbrace{\underbrace{a+b+\ldots+z}_{26}+1+\ldots+10}^{36}$$
+
+$$\frac{7}{25}=\frac{1}{3+\frac{1}{1+\frac{1}{1+\frac{1}{3}}}} \
+\frac{7}{25}=\cfrac{1}{3+\cfrac{1}{1+\cfrac{1}{1+\cfrac{1}{3}}}}$$
+
+\textit{Рядом с $f(x)$ \textup{(}значением функции $f$ в точке $x$\textup{)} лучше использовать
+прямые скобки (а не курсивные)}.
+
+Когда одно из {\scriptsize слов} набрано шрифтом другого кегля, это выглядит плохо.
+{\footnotesize Мы закрываем группу и возвращаемся к обычному шрифту только после пустой строки, завершающей абзац.
+
+}
+
+Вот шрифт обычного размера.
+
+{\footnotesize Здесь мы вернулись к обычному шрифту раньше времени, и межстрочные интервалы
+оказались слишком велики.}
+
+Вот шрифт обычного размера.
+
+Выберем \textbf{полужирный шрифт в \textit{курсивном} начертании} (временно, конечно же).
+
+$$ ||A^k|| = ||\underbrace{AA\ldots A}_{k \mbox{ раз}}|| \leq ||A||||A||\ldots ||A|| = ||A||^k.$$
+
+$$\textrm{spa}\ \textbf{A} \leq \frac{||\textbf{A}_{11}||_{\log} + ||\textbf{A}_{22}||_{\log}}{2} + $$
+
+$$\sqrt{\left(\frac{||\textbf{A}_{11}||_{\log} -
+||\textbf{A}_{22}||_{\log}}{2}\right)^2 + ||\textbf{A}_{12}||||\textbf{A}_{21}||} < 0.$$
+
+$||\textbf{A}||_0 = \max\limits_{1\leqslant i\leqslant n}\sum\limits^n_{j = 1}|a_{ij}|$, $||\textbf{A}||_1 =
+\max\limits_{1\leqslant i\leqslant n}\sum\limits^n_{j = 1}|a_{ji}|$, $||\textbf{A}||_{1/2} = \sqrt{\textrm{spa}\ \textbf{A*A}}$.
+
+$$||\textbf{A}||_{0\log} = \max\limits_{1\leqslant i\leqslant n} \{\text{Re}\ a_{ii} + p_i(\textbf{A})\},$$
+
+$$||\textbf{A}||_{1\log} = \max\limits_{1\leqslant i\leqslant n} \{\text{Re}\ a_{ii} + q_i(\textbf{A})\},$$
+
+$$||\textbf{A}||_{1/2\log} = \textrm{spa}\frac{\textbf{A} + \textbf{A*}}{2}.$$
+
+\end{document}

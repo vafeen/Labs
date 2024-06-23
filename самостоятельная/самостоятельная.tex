@@ -1,0 +1,101 @@
+\documentclass{article}
+\usepackage{russ}
+\usepackage{amsmath, amssymb, amsfonts}
+\begin{document}
+
+УДК 517.984\\
+
+\begin{center}
+\textbf{АБСОЛЮТНАЯ ЛОГАРИФМИЧЕСКАЯ НОРМА}\footnote{Работа выполнена при финансовой поддержке РФФИ, No 16-01-00197.}\\
+\vspace{0,4cm}
+А. И. Иванов, О. И. Петров \\
+\vspace{0,4cm}
+\textit{394006, Воронеж, Университетская пл., 1, Воронежский гос. ун-т.}
+Поступила в редакцию **.11.20** г.\\
+\vspace{0,4cm}
+\begin{quote}
+\quad В статье вводится и изучается новое понятие – абсолютная логарифмическая норма, – которое имеет много общего с классическим определением логарифмической нормы, данным С. М. Лозинским.
+\end{quote}
+
+\begin{quote}
+\quad \textbf{Ключевые слова:} логарифмическая норма, устойчивость по
+Ляпунову, теория Перрона-Фробениуса неотрицательных матриц.
+\end{quote}
+
+\end{center}
+\begin{center} 1. ПРЕДВАРИТЕЛЬНЫЕ СВЕДЕНИЯ \end{center}
+
+Пусть $\textbf{A} = (a_{ij})$ – квадратная $n \times n$ - матрица и $\lambda_1 (\textbf{A}), \lambda_2 (\textbf{A}), \ldots , \lambda_m (\textbf{A})$ $(m \leq n)$ полный набор попарно различных собственных значений матрицы \textbf{A} (спектр sp \textbf{A}). Введём следующие числовые характеристики спектра
+$$\mbox{spa} \; \textbf{A} = \max \limits_{1 \leq i \leq m} \mbox{Re} \; \lambda_{i}(\textbf{A}), \mbox{spr} \; \textbf{A} = \max \limits_{1 \leq i \leq m}|\lambda_{i}(\textbf{A})|\eqno(1)$$
+Первая из формул (1.1) называется \textit{cпектральной абсциссой матрицы} \textbf{A}, а вторая – хорошо известный её \textit{спектральный радиус}. Отметим, что всегда $|\mbox{spa} \, \textbf{A}| \leq \mbox{spr} \, \textbf{A}.$
+\begin{center} 2. АБСОЛЮТНАЯ ВЕЛИЧИНА (МОДУЛЬ) ВЕКТОРА \end{center}
+
+Отметим простые свойства абсолютной величины вектора, напоминающие свойства нормы (сравни с [4, с. 127-129])
+
+$1^0 \, |\textbf{x}| \geq \textbf{0},$
+
+$2^0 \, |\textbf{x}| = \textbf{0} \iff \textbf{x} = \textbf{0},$
+
+$3^0 \, |c \textbf{x}| = |c||\textbf{x}| \, (c \in \mathbb{C} ),$
+
+$4^0 \, |\textbf{x} + \textbf{y}| \leq |\textbf{x}| + |\textbf{y}|$ (неравенство треугольника).\\
+
+Из этих свойств вытекает обратное неравенство треугольника
+
+$$
+|x - y| \geq ||x| - |y|| \eqno(2)
+$$
+\newpage
+\textbf{Лемма 1.} \emph{Для произвольных комплексных чисел х и h справедлива
+формула}
+$$
+\lim\limits_{0<t\rightarrow 0} \frac{|x+th|-|x|}{t} =
+\begin{cases}
+\text{Re} \frac{x\overline{h}}{|x|},&\text{если $x \neq 0$;} \\
+\hskip 13pt |h|, &\text{если $x = 0$,}
+\end{cases}
+\eqno (3)
+$$
+\emph{(где в верхней строке формулы (3) черта -- это черта комплексного со-
+спряжения).}
+
+\textbf{Теорема 1} \emph{Дифференциал Гато} [\textbf{x},\textbf{h}] : $\mathbb {C}^n \times \mathbb{C}^n \rightarrow \mathbb{R}^n$ \emph{обладает следующими свойствами:}
+
+$1^0 \, |[\textbf{x}, \; \textbf{h}]| \leq |\textbf{h}|, \; [\textbf{0}, \, \textbf{h}] = |\textbf{h}|;$
+
+$2^0 \, [\textbf{x}, \; c\textbf{h}] = с[\textbf{x}, \textbf{h}]$ \;\;\;\;\; \textit{при} $c \geq 0,$
+
+$\;\;\;\; [\textbf{x}, \; c\textbf{h}] = -с[\textbf{x}, -\textbf{h}]$ \textit{при} $c \geq 0,$
+
+$3^0 \; [\textbf{x}, \textbf{h} + \textbf{k}] \leq [\textbf{x}, \, \textbf{h}] + [\textbf{x}, \, \textbf{k}] $ (\textit{полуаддитивность});
+
+$4^0 \; [\textbf{x}, \textbf{h}] + [\textbf{x}, -\textbf{h}] \geq \textbf{0} \; (= [\textbf{x}, \textbf{0}]).$
+
+По одной из формул получим
+
+$$
+[\textbf{e}_j,\textbf{Ae}_j] =
+\begin{pmatrix}
+|a_{1j}| \\ \ldots \\ \text{Re} \ a_{jj} \\ \ldots \\
+|a_{nj}|
+\end{pmatrix}
+\leq
+\begin{pmatrix}
+c_{1j} \\ \ldots \\ c_{jj} \\ \ldots \\ c_{nj}
+\end{pmatrix},
+$$
+$$-\sum_{k=2}^{\infty} \frac{t^{k-1} |\textbf{A}|^k}{k!}+\frac{|\textbf{I}+t\textbf{A}| - |\textbf{I}|}{t} \leq \textbf{C} + \sum_{k=2}^{\infty} \frac{t^{k-1}\textbf{C}^k}{k!}$$
+
+$$\dim \left (\sum_{k=1}^{m-1}E_k \right) = \dim E_m = n. \eqno (4)$$
+
+$$im C + \ker C = \mathbb{C}^n \eqno (5)$$
+
+\newpage
+\begin{thebibliography}{}
+\bibitem{} \textit{Былов Б. Ф., Виноград Р. Э., Гробман Д. М., Немыцкий В. В.} Теория показателей Ляпунова и её приложения к вопросам устойчивости. –
+М. : Наука, 1966.
+\bibitem{} \textit{Лозинский С. М.} Оценка погрешности численного интегрирования
+обыкновенных дифференциальных уравнений // Изв. вузов. 1958. № 5.
+С. 52 -- 90.
+\end{thebibliography}
+\end{document} 
