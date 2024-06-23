@@ -16,19 +16,19 @@ public:
     Node(T elem) : next(nullptr), data(elem) {}
 };
 
-    // 1)	Линейные однонаправленные списки БЕЗ заглавного звена:
-    namespace myList
+// 1)	Линейные однонаправленные списки БЕЗ заглавного звена:
+namespace list
 {
     // 1.	Инициализация списка (создание пустого списка).
     template <class T>
-    void init(Node<T> * &head)
+    void init(Node<T> *&head)
     {
         head = nullptr;
     }
 
     // 2.	Проверка на пустоту.
     template <class T>
-    bool isEmpty(Node<T> * &head)
+    bool isEmpty(Node<T> *&head)
     {
         return head == nullptr;
     }
@@ -36,7 +36,7 @@ public:
     // 3.Добавление элемента в список:
     // 	в начало списка (в голову списка);
     template <class T>
-    void AddToHead(Node<T> * &head, T elem)
+    void AddToHead(Node<T> *&head, T elem)
     {
         Node<T> *p = new Node<T>;
         p->data = elem;
@@ -46,7 +46,7 @@ public:
 
     // 	после заданного элемента (заданный элемент определяется указателем).
     template <class T>
-    void AddAfterNode(Node<T> * &pNode, T elem)
+    void AddAfterNode(Node<T> *&pNode, T elem)
     {
         Node<T> *p = new Node<T>;
         p->data = elem;
@@ -57,7 +57,7 @@ public:
     // 4.	Удаление элемента из списка:
     // 	из начала списка (из головы списка);
     template <class T>
-    void DeleteFromHead(Node<T> * &head)
+    void DeleteFromHead(Node<T> *&head)
     {
         Node<T> *p = head;
         head = head->next;
@@ -68,7 +68,7 @@ public:
 
     // 	после заданного элемента (заданный элемент определяется указателем).
     template <class T>
-    void DeleteAfterNode(Node<T> * &pNode)
+    void DeleteAfterNode(Node<T> *&pNode)
     {
         Node<T> *p = pNode->next;
         pNode->next = p->next;
@@ -79,7 +79,7 @@ public:
 
     // поиск места для списка
     template <class T>
-    Node<T> *Search(Node<T> * head, T elem)
+    Node<T> *Search(Node<T> *head, T elem)
     {
         Node<T> *p = head;
         while (p->next && p->next->data <= elem)
@@ -92,7 +92,7 @@ public:
     // 5.	Создание списка:
     // 	в прямом порядке;
     template <class T>
-    void CreateListInDirect(Node<T> * &head, vector<T> elems)
+    void CreateListInDirect(Node<T> *&head, vector<T> elems)
     {
         AddToHead(head, elems[0]);
         Node<T> *tail = head;
@@ -105,7 +105,7 @@ public:
 
     // 	в обратном порядке;
     template <class T>
-    void CreateReversedList(Node<T> * &head, vector<T> elems)
+    void CreateReversedList(Node<T> *&head, vector<T> elems)
     {
 
         for (size_t i = 0; i < elems.size(); ++i)
@@ -116,7 +116,7 @@ public:
 
     // 	упорядоченно.
     template <class T>
-    void CreateNormalList(Node<T> * &head, std::vector<T> elems)
+    void CreateNormalList(Node<T> *&head, std::vector<T> elems)
     {
         for (size_t i = 0; i < elems.size(); ++i)
         {
@@ -139,7 +139,7 @@ public:
 
     // 6.	Печать списка.
     template <class T>
-    void PrintList(Node<T> * head)
+    void PrintList(Node<T> *head)
     {
         Node<T> *p = head;
         while (p != nullptr)
@@ -152,7 +152,7 @@ public:
 
     // 3)	Рекурсивная печать списка (без заглавного звена)
     template <class T>
-    void PrintListRecurse(Node<T> * head)
+    void PrintListRecurse(Node<T> *head)
     {
         if (head)
         {
@@ -163,7 +163,7 @@ public:
 
     // 4)	Рекурсивная функция суммы элементов списка (без заглавного звена)
     template <class T>
-    T SumResult(Node<T> * head)
+    T SumResult(Node<T> *head)
     {
         if (!head)
             return 0;
@@ -172,11 +172,12 @@ public:
 
     // 7.	Уничтожение списка.
     template <class T>
-    void ClearList(Node<T> * &head)
+    void ClearList(Node<T> *&head)
     {
         while (!isEmpty(head))
             DeleteFromHead(head);
     }
+
 }
 
 // 2)	Линейные однонаправленные списки С заглавным звеном:
