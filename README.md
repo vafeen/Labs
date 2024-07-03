@@ -11,3 +11,4 @@ CSA | Архитектуры вычислительных систем | labs Lo
 DB | Базы данных | labs from the site https://sql-ex.ru/exercises/index.php?act=learn
 OOP | Объектно-ориентированное программирование | labs 
 OS | Операционные системы | labs 
+EN | Английскй | Reading log on topic "Composable functions" && summary && translation 
