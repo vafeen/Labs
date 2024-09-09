@@ -13,3 +13,4 @@ OS | Операционные системы | labs
 EN | Английскй | Reading log on topic "Composable functions" && summary && translation
 practice2CourseSURF | Практика 2 курс | Report on the work done during training practice at SURF
 py | Python | labs
+CS | C# | labs
