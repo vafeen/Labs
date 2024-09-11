@@ -1,19 +1,21 @@
-public class Mechanism : Detail
+public class Mechanism : IDetail, IComparable<Mechanism>
 {
-	public List<Detail> Components { get; set; }
+	public string Code { get; set; }
+	public double Price { get; set; }
 
-	public Mechanism(string name, double weight) : base(name, weight)
+	public Mechanism(string code, double price)
 	{
-		Components = new List<Detail>();
+		Code = code;
+		Price = price;
 	}
 
-	public void AddComponent(Detail component)
-	{
-		Components.Add(component);
-	}
 
-	override public string ToString()
+
+	public int CompareTo(Mechanism? other)
 	{
-		return $"Mechanism: {Name} has {Components.Count} components.";
+		if (other == null)
+			throw new NotImplementedException();
+
+		return Price.CompareTo(other.Price);
 	}
 }

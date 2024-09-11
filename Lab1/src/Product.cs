@@ -1,14 +1,12 @@
 ﻿public class Product : Mechanism
 {
-	public string ProductCode { get; set; }
+	// public override string Code { get; set; }
+	// public override double Price { get; set; }
 
-	public Product(string name, double weight, string productCode) : base(name, weight)
+	public Product(string code, double price) : base(code, price)
 	{
-		ProductCode = productCode;
+		Code = code;
+		Price = price;
 	}
 
-	override public string ToString()
-	{
-		return $"Product Code: {ProductCode}";
-	}
 }

@@ -1,14 +1,11 @@
-public class Node : Detail
+public class Node : Mechanism
 {
-	public string NodeType { get; set; }
+	// public override string Code { get; set; }
+	// public override double Price { get; set; }
 
-	public Node(string name, double weight, string nodeType) : base(name, weight)
+	public Node(string code, double price) : base(code, price)
 	{
-		NodeType = nodeType;
-	}
-
-	override public string ToString()
-	{
-		return $"Node Type: {NodeType}";
+		Code = code;
+		Price = price;
 	}
 }
