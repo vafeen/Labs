@@ -14,3 +14,4 @@ EN | Английскй | Reading log on topic "Composable functions" && summary
 practice2CourseSURF | Практика 2 курс | Report on the work done during training practice at SURF
 py | Python | labs
 CS | C# | labs
+CG | Компьютерная графика | labs
