@@ -60,8 +60,8 @@ void renderCircle(float radius) {
     glClear(GL_COLOR_BUFFER_BIT); // Очистка буфера цвета
     glClearColor(0.3f, 0.3f, 0.3f, 1.0f); // Установка цвета фона
 
-    glBegin(GL_TRIANGLE_FAN); // Начало рисования треугольного веера
-    glColor3f(fillColor[0], fillColor[1], fillColor[2]); // Установка цвета заливки
+    glBegin(GL_TRIANGLE_FAN);
+    glColor3f(fillColor[0], fillColor[1], fillColor[2]);
     glVertex2f(0.0f, 0.0f); // Центр круга
 
     // Рисование круга с использованием полярных координат
@@ -75,7 +75,7 @@ void renderCircle(float radius) {
 
 void processInput(GLFWwindow* window)
 {
-    // Дополнительная логика обработки ввода может быть добавлена здесь
+    
 }
 
 void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods) {
