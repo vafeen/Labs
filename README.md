@@ -15,3 +15,4 @@ practice2CourseSURF | Практика 2 курс | Report on the work done duri
 py | Python | labs
 CS | C# | labs
 CG | Компьютерная графика | labs
+CNet | Компьютерные сети | labs
